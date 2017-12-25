@@ -1,5 +1,7 @@
-const db = require('./db');
+const { users, getUsers, User } = require('./db');
 
-const users = db.getUsers();
+// const users = db.getUsers();
 
-console.log(users);
+const user = new User();
+
+console.log("Array: ",users," Object: ", user);

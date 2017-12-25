@@ -5,4 +5,15 @@ function getUsers() {
     return users;
 }
 
-module.exports.getUsers = getUsers;
+class User {
+    constructor(firstname, lastname){
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+}
+
+module.exports = {
+    User,
+    users,
+    getUsers
+}
